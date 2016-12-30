@@ -1,0 +1,32 @@
+/// Sparc is based heavily on Spector, which is based on Basscss
+/// Copyright (c) 2016 - forever Chase McCoy
+
+/// This is the main SCSS file for SPARC. When the CSS is generated,
+/// this is the file that will need to be passed in to the SASS processor.
+/// Inside this file, we simply import all of the partial files (files that
+/// begin with an underscore) into our main file. The order in which these files
+/// are imported is the order in which they will appear in the resulting CSS file.
+
+// Variable config
+@import 'config';
+
+@import "susy/susy";
+
+// Set Default Values
+@import 'reset';
+
+// Layout
+@import 'breakpoints';
+@import 'grid';
+@import 'layout';
+@import 'margin';
+@import 'padding';
+@import 'position';
+@import 'hide';
+
+// Styling
+@import 'typography';
+@import 'border';
+@import 'opacity';
+@import 'background';
+@import 'color';

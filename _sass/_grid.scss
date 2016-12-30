@@ -1,0 +1,33 @@
+// @for $i from 1 through 12 {
+//   .col-#{$i} {
+//     width: calc(#{$i}/12 * 100%);
+//   }
+// }
+//
+// @if (variable-exists(breakpoints)) {
+//   @each $bp-name, $bp-value in $breakpoints {
+//     @media (min-width: $bp-value) {
+//       @for $i from 1 through 12 {
+//         .#{$bp-name}-col-#{$i} {
+//           width: calc(#{$i}/12 * 100%);
+//         }
+//       }
+//     }
+//   }
+// }
+
+.container {
+  @include container(center);
+}
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @include media-breakpoint-up($bp-name) {
+      @for $i from 1 through map-get($susy, columns) {
+        .col-#{$bp-name}-#{$i} {
+          @include span($i)
+        }
+      }
+    }
+  }
+}

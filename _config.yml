@@ -1,6 +1,6 @@
 # Site settings
-title: "Site Title"
-email: "email address"
+title: "Chase McCoy "
+email: "chasem000@gmail.com"
 description: "Description"
 url: "Site URL"
 
@@ -8,13 +8,4 @@ url: "Site URL"
 markdown: kramdown
 highlighter: pygments
 
-permalink: /:year/:month/:day/:title
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      category: post
+permalink: /:year/:month/:title
