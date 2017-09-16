@@ -1,8 +1,8 @@
 # Site settings
-title: "Chase McCoy "
+title: "Hey, okay."
 email: "chasem000@gmail.com"
-description: "Description"
-url: "Site URL"
+description: ""
+url: ""
 
 # Build settings
 markdown: kramdown
